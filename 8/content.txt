@@ -1,0 +1,17 @@
+## Objective
+1. Replace the text and pictures into a specified size. The information is from a spreadsheet.
+2. Do it in a simple GUI so that all work can be done in simple clicks.
+
+## Analysis
+The information of the ID is from a spreadsheet as ".xlsx". The resulting document is in the extension of ".docx".
+From the word document shown in Fig 1, it is shown that the IDs are in a table that contains rows with two columns. Each row is an ID. The first column is the information part and the second column is the unchanged part. Therefore, only *the first column of each row* will be adjusted.
+In the first column, there are texts and pictures to be updated. As shown in Fig 2, the picture is not an inline object.
+In the spreadsheet, the format is shown as Fig 3.
+
+## Solutions
+### 1. Python - python-docx package
+The first solution that occured to me is using python to do the automation. I found a package called `python-docx'. From its documentation, it can read table cells and extract text as paragraphs. I prompted in the prompter to extract the content from the cell. The result is shown as Fig 4. It is said there are 5 paragraphs in the cell. So I just need to replace the paragraphs into the content I want to display. However, there is a problem: the image in the cell is a floating shape instead of inline image, which means that `python-docx` cannot handle the image in the document. (You cannot find a class to edit the floating shape in docx in documentation). Therefore, there should be the other solution to automate the document.
+
+### 2. Virtual Basic for Applications (VBA)
+Instead of using the third-party language to operate the word document, VBA could be the best solution to operate the documents of Microsoft Office products.
+It needs the data from a spreadsheet with extension of ".xlsx" and the resulting document is in ".docx", which means that the program needs to operate the Word Application and Excel Application at the same time. I chose to operate inside Word Application, so the crossing reference should be 'Excel Application'. As shown in Fig 5, in this case the reference should be 'Microsoft Excel 16.0 Object Library' and enable it to access Excel in Word.
