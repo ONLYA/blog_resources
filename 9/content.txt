@@ -1,0 +1,20 @@
+## Link to parts:
+* TX
+* Auto_Sender
+* RX
+
+## Updates:
+### 08 August 2019
+1. Finish Design 1 of    `TX`
+2. Finish Implement 1 of `TX`
+3. Finish Design 1 of    `Auto_Sender`
+4. Finish Implement 1 of `Auto_Sender`
+5. Finish Design 1 of    `RX`
+6. Finish Implement 1 of `RX`
+
+### Bills of Materials
+<table class="table">
+  <tr><th>Bills</th><th>NAME</th><th>QTY</th></tr>
+  <tr><td>£11.72</td><td>Si4463F30 1W Module</td><td>2</td></tr>
+  <tr><td>£5.8</td><td>2 to 1 Mutiplexer 74LVC1G157GW</td><td>50</td></tr>
+</table>
