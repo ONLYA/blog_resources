@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
+        python-version: [3.7]
     steps:
       - uses: actions/checkout@v2.1.0
       - name: Set up Python ${{ matrix.python-version }}
@@ -21,9 +21,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Printing
         run: |
-          python -m pip install --upgrade pip
-          pip install wheel
-          pip install cloudinary
           echo "All:"
           echo "${{ steps.abc.outputs.all }}"
           echo "Added:"
@@ -38,5 +35,7 @@ jobs:
           echo "${{ steps.abc.outputs.added_modified }}"
       - name: Uploading
         run: |
+          python -m pip install --upgrade pip
+          pip install wheel
           pip install cloudinary
-          python upload.py "${{ steps.abc.outputs.added_modified }}"
+          python ptup.py ${{ steps.abc.outputs.added_modified }}
