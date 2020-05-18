@@ -28,3 +28,7 @@ jobs:
           echo "${{ steps.abc.outputs.modified }}"
           echo "Added+Modified:"
           echo "${{ steps.abc.outputs.added_modified }}"
+      - name: Uploading
+        run: |
+          pip install cloudinary
+          python upload.py "${{ steps.abc.outputs.added_modified }}"
