@@ -39,6 +39,10 @@ jobs:
           echo "Added+Modified:"
           echo "${{ steps.abc.outputs.added_modified }}"
       - name: Uploading
+        env:
+          API_KEY: ${{ secrets.api_key }}
+          API_SECRET: ${{ secrets.api_secret }}
+          CLOUD_NAME: ${{ secrets.cloud_name }}
         run: |
           python ptup.py ${{ steps.abc.outputs.added_modified }}
           python ptdl.py ${{ steps.abc.outputs.removed }}
