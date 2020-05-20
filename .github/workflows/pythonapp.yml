@@ -46,4 +46,5 @@ jobs:
         run: |
           python ptup.py ${{ steps.abc.outputs.added_modified }}
           python ptdl.py ${{ steps.abc.outputs.removed }}
+          echo;echo $API_KEY
           echo;echo "Sync Finished"
