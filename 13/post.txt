@@ -1,0 +1,25 @@
+How to kill BadUSB - Introduction
+
+
+BadUSB has been a hacking tool that is hard to be prevented. However, I have got 2 main ideas to guard our precious computers from the attacks.
+
+
+## Introduction
+
+BadUSB is a hacking tool that mimics a user controlling his device with HID devices. Because it is recognized as an HID device by victims' computers, BadUSB is hard to be avoided on the computer side unless all USB ports are physically blocked.
+
+There has been a hacker tried a way to block BadUSB according to the fact that it types much faster than humans. He wrote a software to detect the typing speed. If the speed is faster than the threshold, the software will block the input temporarily. However, this technique is simple to be by-passed: adding delays between each HID input to mimic the speed of human typing. And there is a probablity that a user can type faster than the threshold, which can reduce productivity.
+
+I have got two ideas to block BadUSB attacks, one on software aspect and the other on hardware one.
+
+## Software method
+
+The user already knows the number of HID devices his computer is connected. He will specify the number of and unique IDs of HID devices he has plugged in. If the software detects any other HID devices, it will block system input and pop a warning.
+
+![The idea of the software][1]
+
+## Hardware method
+
+The BadUSB devices look like a USB so people always regard it as a storage device. The hardware device will act as a guard in the front of USB ports. The guard device will be powered by USB port and have an input from suspicious USBs. the device is to mainly detect the HID input from the input. It will always check whether the USB input is HID input. If it is HID input, a warning will be shown and the bus between the USB input and computer's port will be blocked immediately. If it is a normal device, the input will be buffered to the USB port with high-speed buffers.
+
+![The idea and structure of the Guard device][2]
