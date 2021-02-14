@@ -1,6 +1,6 @@
-How to kill BadUSB - Software Section (Windows)
+# How to kill BadUSB - Software Section (Windows)
 
-BadUSB is to simulate human keyboard input, which can be prevented on the Software side. It just needs to block all keyboard input globally when the unexpected HID device is detected. This is especially for Windows OS.
+> BadUSB is to simulate human keyboard input, which can be prevented on the Software side. It just needs to block all keyboard input globally when the unexpected HID device is detected. This is especially for Windows OS.
 
 
 ## Introduction
