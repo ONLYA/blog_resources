@@ -56,7 +56,7 @@ There are not many videos and tutorials to work with LPC55S6x MCUs as it is a re
 
 [1]: https://cdn.jsdelivr.net/gh/onlya/blog_resources/15/2.png "Block diagram of LPC55S6x MCU family"
 [2]: https://cdn.jsdelivr.net/gh/onlya/blog_resources/15/3.png "Block diagram of Arm Cortex-M33 Core"
-[2]: https://cdn.jsdelivr.net/gh/onlya/blog_resources/15/4.jpg "Block Diagram of a quadcopter"
+[3]: https://cdn.jsdelivr.net/gh/onlya/blog_resources/15/4.jpg "Block Diagram of a quadcopter"
 
 [u1]:https://www.youtube.com/user/MacPuffdog
 [u2]:https://www.nxp.com/document/guide/get-started-with-the-lpc55s69-evk:GS-LPC55S69-EVK
@@ -64,3 +64,9 @@ There are not many videos and tutorials to work with LPC55S6x MCUs as it is a re
 [u4]:https://community.nxp.com/t5/MCUXpresso-General/LPC-Link-Target-Discovery-not-working/m-p/814828
 [u5]:https://www.youtube.com/channel/UCGb0cwww_CENTI1wgo6FJTw
 [u6]:https://www.youtube.com/playlist?list=PL0zq7qRU_mUvYH4QWqRr8s_iC0JvHr8jX
+
+References:
+* [Joop Brokking's Website][https://www.brokking.net/]
+* [LPC55S6x product page][https://www.nxp.com/products/processors-and-microcontrollers/arm-microcontrollers/general-purpose-mcus/lpc5500-cortex-m33/high-efficiency-arm-cortex-m33-based-microcontroller-family:LPC55S6x]
+* [Arm Cortex-M33 Core][https://www.arm.com/products/silicon-ip-cpu/cortex-m/cortex-m33]
+* [embeddedpro's LPC55S69-EVK tutorial][https://www.youtube.com/playlist?list=PL0zq7qRU_mUvYH4QWqRr8s_iC0JvHr8jX]
