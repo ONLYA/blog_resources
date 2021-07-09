@@ -151,5 +151,9 @@ void ADC10_loop(void){
 }
 ```
 
+Demonstration:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lj59lt1EdqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [1]: https://cdn.jsdelivr.net/gh/onlya/blog_resources/16/1.png "The joystick module"
 [2]: https://cdn.jsdelivr.net/gh/onlya/blog_resources/16/2.png "Schematic of the joystick example"
