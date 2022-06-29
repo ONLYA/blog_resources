@@ -1,0 +1,22 @@
+Circuit: * F:\GitHub_Repos\blog_resources\18\output-236.asc
+
+WARNING: Less than two connections to node N007.  This node is used by R7.
+.OP point found by inspection.
+
+Date: Mon Jun 13 21:32:05 2022
+Total elapsed time: 0.196 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2279
+traniter = 2279
+tranpoints = 1099
+accept = 1083
+rejected = 16
+matrix size = 22
+fillins = 0
+solver = Normal
+Matrix Compiler1: 820 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 1.53 KB object code size  0.1/0.2/[0.1]
+
