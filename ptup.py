@@ -1,5 +1,6 @@
 import sys
 import os
+import requests
 
 print("-------- Uploading --------")
 if len(sys.argv) < 2:
@@ -27,6 +28,9 @@ for file in files:
         print(file + " -- Not an image file! Skipped")
         continue
     print(file + ' uploaded')
+    r = requests.get("https://purge.jsdelivr.net/gh/onlya/blog_resources/" + file)
+    if r.status_code == 200:
+        print(file + ' purged')
     pass
 
 print("DONE uploading!")
