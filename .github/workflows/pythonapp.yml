@@ -45,7 +45,7 @@ jobs:
           API_SECRET: ${{ secrets.api_secret }}
           CLOUD_NAME: ${{ secrets.cloud_name }}
         run: |
-          python ptup.py ${{ steps.abc.outputs.added_modified }}
+          python ptup.py ${{ steps.abc.outputs.added_modified }} ${{ steps.abc.outputs.renamed }}
           python ptdl.py ${{ steps.abc.outputs.removed }}
           echo;echo $API_KEY
           echo;echo "Sync Finished"
